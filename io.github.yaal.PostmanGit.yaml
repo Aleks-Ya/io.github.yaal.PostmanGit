@@ -1,4 +1,4 @@
-app-id: com.getpostman.Postman
+app-id: io.github.yaal.PostmanGit
 runtime: org.freedesktop.Platform
 runtime-version: '24.08'
 sdk: org.freedesktop.Sdk
@@ -32,8 +32,8 @@ modules:
     build-commands:
       - install -Dm755 apply_extra ${FLATPAK_DEST}/bin/apply_extra
       - install -Dm644 logo-mark.svg ${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg
-      - install -Dm644 -t /app/share/applications com.getpostman.Postman.desktop
-      - install -Dm644 -t /app/share/metainfo com.getpostman.Postman.appdata.xml
+      - install -Dm644 -t /app/share/applications io.github.yaal.PostmanGit.desktop
+      - install -Dm644 -t /app/share/metainfo io.github.yaal.PostmanGit.appdata.xml
       - install -Dm755 run.sh ${FLATPAK_DEST}/bin/Postman
       - icon_in="${FLATPAK_DEST}/share/icons/hicolor/scalable/apps/${FLATPAK_ID}.svg";
         icon_out="${FLATPAK_ID}.png"; for s in {32,64,128,256,512}; do rsvg-convert
@@ -77,8 +77,8 @@ modules:
           - export TMPDIR="$XDG_CACHE_HOME"
           - zypak-wrapper.sh /app/extra/Postman/Postman "$@"
       - type: file
-        path: com.getpostman.Postman.desktop
+        path: io.github.yaal.PostmanGit.desktop
       - type: file
-        path: com.getpostman.Postman.appdata.xml
+        path: io.github.yaal.PostmanGit.appdata.xml
       - type: file
         path: logo-mark.svg
