@@ -1,9 +1,9 @@
 [Desktop Entry]
-Name=Postman
+Name=PostmanGit
 Exec=Postman %U
 Terminal=false
 Type=Application
-Icon=com.getpostman.Postman
+Icon=io.github.yaal.PostmanGit
 Categories=Development;WebDevelopment;
 MimeType=x-scheme-handler/postman;
 StartupNotify=true
