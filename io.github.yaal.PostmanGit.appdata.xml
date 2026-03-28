@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop">
-  <id>com.getpostman.Postman</id>
+  <id>io.github.yaal.PostmanGit</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>LicenseRef-proprietary</project_license>
-  <name>Postman</name>
+  <name>PostmanGit</name>
   <summary>Platform for building and using APIs</summary>
   <description>
     <p>**NOTE: This wrapper is not verified by, affiliated with, or supported by Postman Inc.**</p>    
@@ -15,7 +15,7 @@
       for macOS, Windows, Linux and Chrome users.
     </p>
   </description>
-  <launchable type="desktop-id">com.getpostman.Postman.desktop</launchable>
+  <launchable type="desktop-id">io.github.yaal.PostmanGit.desktop</launchable>
   <screenshots>
     <screenshot type="default">
       <image>https://assets.postman.com/postman-docs/postman-app-default-v8.jpg</image>
