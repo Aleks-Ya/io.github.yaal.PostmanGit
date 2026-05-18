@@ -19,10 +19,21 @@ finish-args:
 build-options:
   no-debuginfo: true  #Prevents "Read-only file system" warning in Git module
 modules:
+  - name: Nano
+    buildsystem: autotools
+    config-opts:
+      - --prefix=/app
+    sources:
+      - type: archive
+        url: https://www.nano-editor.org/dist/v9/nano-9.0.tar.xz
+        sha256: 9f384374b496110a25b73ad5a5febb384783c6e3188b37063f677ac908013fde
   - name: Git
     buildsystem: autotools
     config-opts:
       - --prefix=/app
+    post-install:
+      - install -d /app/etc
+      - /app/bin/git config --system core.editor /app/bin/nano
     sources:
       - type: archive
         url: https://www.kernel.org/pub/software/scm/git/git-2.54.0.tar.xz
